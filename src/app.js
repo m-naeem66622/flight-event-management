@@ -5,6 +5,8 @@ const app = express();
 const indexRouter = require("./routes/index");
 const flightsRouter = require("./routes/flights");
 
+app.use(express.static(__dirname + "/public"));
+
 // Set up EJS for server-side rendering
 app.set("views", path.join(__dirname, "views"));
 app.set("view engine", "ejs");

@@ -1,10 +1,26 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <title>Flight Event Management</title>
-</head>
-<body>
-    <h1>Welcome to Flight Event Management</h1>
-    <a href="/flights">Manage Flights</a>
-</body>
+  <head>
+    <title>Airline Ticket Reservation</title>
+    <link rel="stylesheet" href="/styles/main.css" />
+  </head>
+
+  <body>
+    <header>
+      <img src="/images/airplane-header-image.jpg" alt="Airline" />
+      <h1>Airline Ticket Reservation</h1>
+    </header>
+
+    <main>
+      <form action="/reserve" method="POST">
+        <label class="" for="email">Email Address:</label>
+        <input class="" type="email" id="email" name="email" />
+
+        <label for="departDate">Departure Date:</label>
+        <input type="date" id="departDate" name="departDate" />
+
+        <button type="submit">Reserve Ticket</button>
+      </form>
+    </main>
+  </body>
 </html>
