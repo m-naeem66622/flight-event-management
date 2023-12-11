@@ -39,15 +39,22 @@ form {
   flex-direction: column;
 }
 
-label,
-input,
-button {
+form > label,
+form > input,
+form > button {
   font-size: 18px;
   padding: 10px;
   border-radius: 5px;
 }
 
-label {
+form > label {
+  margin-bottom: 10px;
+}
+
+.wrapper__checkbox {
+  font-size: 18px;
+  padding: 10px;
+  border-radius: 5px;
   margin-bottom: 10px;
 }
 
@@ -67,3 +74,11 @@ button:hover {
   background-color: #00a2ff;
 }
 
+input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+input[type="date"] {
+  display: block;
+  margin-bottom: 20px;
+}

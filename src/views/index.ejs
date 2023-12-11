@@ -19,8 +19,23 @@
         <label for="departDate">Departure Date:</label>
         <input type="date" id="departDate" name="departDate" />
 
+        <div class="wrapper__checkbox">
+          <input type="checkbox" id="roundTrip" name="roundTrip" />
+          <label for="roundTrip">Round Trip</label>
+        </div>
+
+        <label for="returnDate" style="display: none">Return Date:</label>
+        <input
+          type="date"
+          id="returnDate"
+          name="returnDate"
+          style="display: none"
+        />
+
         <button type="submit">Reserve Ticket</button>
       </form>
     </main>
+
+    <script src="/scripts/main.js"></script>
   </body>
 </html>
