@@ -82,3 +82,34 @@ input[type="date"] {
   display: block;
   margin-bottom: 20px;
 }
+
+/* Message Styling */
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+.message {
+  background-color: #454545;
+  padding: 20px;
+  text-align: center;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.message h2 {
+  margin-bottom: 10px;
+}
+
+/* Back Button Styling */
+
+.button {
+  display: inline-block;
+  padding: 15px 30px;
+  background-color: #00a2ff;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+}

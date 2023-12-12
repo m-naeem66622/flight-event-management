@@ -93,6 +93,7 @@ form fields, the form should consist of the following elements:
 
 When the user checks the Round-Trip checkbox, the return flight date input should appear.<br/>
 When the user unchecks the checkbox, the return flight date input should disappear.
+
 ### Part 3: Creating the Express App
 In this part of the project, you will create an Express app to serve the HTML, CSS, and 
 JavaScript files created in parts 1 and 2 and create an endpoint to handle the submission of 
@@ -104,10 +105,10 @@ root endpoint path.
 (if provided) are in the future, and if it’s not it should respond with a simple HTML page that 
 informs the user that the ticket reservation isn’t successful due to invalid dates.
 4. If the form data is valid:
-a. The endpoint should send a confirmation email to the email address provided by the 
-user. The email should contain a brief message thanking the user for their 
-reservation. Hint: Refer to week 8 for sending emails.
-b. The endpoint should respond with a simple thank you HTML page
+    - The endpoint should send a confirmation email to the email address provided by the 
+    user. The email should contain a brief message thanking the user for their 
+    reservation. Hint: Refer to week 8 for sending emails.
+    - The endpoint should respond with a simple thank you HTML page
 5. Modify the HTML form to submit the user input to the form submission endpoint you 
 created.
 

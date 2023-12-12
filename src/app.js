@@ -2,9 +2,25 @@ require("dotenv").config();
 const path = require("path");
 const express = require("express");
 const app = express();
-const indexRouter = require("./routes/index");
-const flightsRouter = require("./routes/flights");
 
+const db = require("./models/index.model");
+db.sequelize
+  .sync()
+  .then(() => {
+    console.log("Synced db.");
+  })
+  .catch((err) => {
+    console.log("Failed to sync db: " + err.message);
+  });
+
+// Import routers
+const indexRouter = require("./routes/index.route");
+const flightsRouter = require("./routes/flights.route");
+
+// Set up body parsing middleware
+app.use(express.json());
+
+// Set up static files middleware
 app.use(express.static(__dirname + "/public"));
 
 // Set up EJS for server-side rendering
@@ -24,5 +40,3 @@ app.use((err, req, res, next) => {
 // Start the server
 const port = process.env.PORT || 3000;
 app.listen(port, () => console.log(`Server is running on port ${port}`));
-
-module.exports = app;
