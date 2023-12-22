@@ -9,11 +9,3 @@ roundTrip.addEventListener("change", function () {
     returnDate.style.display = "none";
   }
 });
-
-// Add validation
-departDate.addEventListener("blur", function () {
-  // Validate depart date
-});
-returnDate.addEventListener("blur", function () {
-  // Validate return date
-});

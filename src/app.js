@@ -1,4 +1,3 @@
-require("dotenv").config();
 const path = require("path");
 const express = require("express");
 const app = express();
@@ -18,7 +17,7 @@ const indexRouter = require("./routes/index.route");
 const flightsRouter = require("./routes/flights.route");
 
 // Set up body parsing middleware
-app.use(express.json());
+app.use(express.urlencoded({ extended: true }));
 
 // Set up static files middleware
 app.use(express.static(__dirname + "/public"));

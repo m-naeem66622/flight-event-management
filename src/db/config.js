@@ -1,7 +1,7 @@
 module.exports = {
   HOST: "127.0.0.1",
-  USER: "root",
-  PASSWORD: "12345",
+  USER: "root", // Replace with your own username
+  PASSWORD: "12345", // Replace with your own password
   DB: "flight_event_management",
   dialect: "mysql",
   pool: {

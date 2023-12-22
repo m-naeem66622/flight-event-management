@@ -2,24 +2,33 @@
 
 This is a server-side rendered application built with Express.js and MySQL2 for managing flight events.
 
+## Prerequisites
+
+Before you begin, ensure you have met the following requirements:
+
+* You have installed the latest version of [Node.js and npm](https://nodejs.org/en/download/).
+* You have a Windows/Linux/Mac machine.
+* You have installed [MySQL server](https://dev.mysql.com/downloads/installer/).
+
 ## Setup
 
-1. Clone the repository.
-2. Run `npm install` to install dependencies.
-3. Set up your MySQL database and update the `src/db/config.js` file with your database credentials.
-4. Run `npm start` to start the application.
+1. Open Command Prompt
+2. Navigate to the project directory.
+3. Set up your MySQL database. Update the database configuration (username, password, dbname, etc.) in `src/db/config.js` as needed.
+4. Run `npm install` to install the project dependencies.
+6. Create an account on [Ethereal Email](https://ethereal.email/) to get nodemailer configuration.
+7. Update `src/helpers/nodemailer.helper.js` with the received configuration.
+8. Run `npm start` to start the server.
+9. Navigate to `http://localhost:3000` in your web browser to view the application.
 
 ## Usage
 
-Navigate to the application in your web browser. You can view, create, update, and delete flight events.
+To use the application:
 
-## Contributing
+1. Navigate to the application in your web browser.
+2. Enter your email (required).
+3. Select the departure date (required).
+4. If you're planning a round trip, check the "Roundtrip" box. This will make the return date field appear (optional).
+5. Click "Reserve Ticket" to create a flight event.
 
-Please read CONTRIBUTING.md for details on our code of conduct, and the process for submitting pull requests to us.
-
-## License
-
-This project is licensed under the MIT License - see the LICENSE.md file for details
-```
-
-This is a basic template and should be updated to match the specifics of your project.
+You will receive a confirmation email once the flight event is successfully created.
